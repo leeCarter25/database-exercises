@@ -1,20 +1,23 @@
 USE codeup_test_db;
 
-SELECT album
+SELECT albums
     FROM sales
 WHERE artists_first_name = 'Pink';
 
 SELECT year_released
 FROM sales
-WHERE artists_first_name = 'The Beatles';
+WHERE albums = 'Sgt. Pepper''s Lonely Hearts Club Band';
 
-SELECT year_released
+SELECT *
 FROM sales
-WHERE year_released = 1990 <= 1999;
+WHERE year_released BETWEEN 1990 and 1999;
 
-SELECT total_certified_copies
+SELECT *
 FROM sales
-WHERE total_certified_copies = 20 || total_certified_copies <= 20;
+WHERE total_certified_copies < 20;
+
+SELECT * FROM albums WHERE genre = rock;
+
 
 
 

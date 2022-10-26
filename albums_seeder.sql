@@ -1,6 +1,6 @@
 USE codeup_test_db;
 
-INSERT INTO sales (artists_first_name, artists_last_name, album, year_released, total_certified_copies)
+INSERT INTO sales (artists_first_name, artists_last_name, albums, year_released, total_certified_copies)
 VALUES ('Led', 'Zeppelin', 'Led Zeppelin IV' '1971'   '30.4'),
        ('Michael',    'Jackson', 'Bad' '1987'   '21.1'),
        ('Meat',    'Loaf', 'Bat Out Of Hell' '1977' '22'),
